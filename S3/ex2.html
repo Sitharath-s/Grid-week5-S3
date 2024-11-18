@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox Sidebar Layout</title>
+    <link rel="stylesheet" href="ex2.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <button><i data-lucide="square-user"></i></button>
+            <button><i data-lucide="send"></i></button>
+            <button><i data-lucide="message-square-more" class="notification"></i><span class="notif-count">12</span></button>
+            <button><i data-lucide="album"></i></button>
+        </div>
+        <div class="inbox-sidebar">
+            <div class="inbox-header">
+                <div class="conversation-label">
+                    <i data-lucide="inbox"></i>
+                    <h1>Inbox</h1>
+                </div>
+                <i data-lucide="search" class="search-icon"></i>
+            </div>
+            <div class="conversations">
+                <div class="conversation-item">
+                    <div class="conversation-label">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLQlX8kHgCFYgNqXisB6cWENyTofgINwzUOG_u6zBbliVuY_n5EwFl0W4k1b43X9HcsII&usqp=CAU" alt="profile" class="profile">
+                        <span>You</span>
+                    </div>
+                    <span class="conversation-count">5</span>
+                </div>
+                <div class="conversation-item">
+                    <div class="conversation-label">
+                        <i data-lucide="at-sign"></i>
+                        <span>Mentions</span>
+                    </div>
+                    <span class="conversation-count">2</span>
+                </div>
+                <div class="conversation-item active">
+                    <div class="conversation-label">
+                        <i data-lucide="users-round"></i>
+                        <span>All</span>
+                    </div>
+                    <span class="conversation-count">234</span>
+                </div>
+                <div class="conversation-item">
+                    <div class="conversation-label">
+                        <i data-lucide="user-check"></i>
+                        <span>Unassigned</span>
+                    </div>
+                    <span class="conversation-count">20</span>
+                </div>
+                <div class="conversation-item">
+                    <div class="conversation-label">
+                        <i data-lucide="star"></i>
+                        <span>Sales</span>
+                    </div>
+                    <span class="conversation-count">142</span>
+                </div>
+                <div class="conversation-item">
+                    <div class="conversation-label">
+                        <i data-lucide="headset"></i>
+                        <span>Support</span>
+                    </div>
+                    <span class="conversation-count">4</span>
+                </div>
+                <div class="conversation-item">
+                    <div class="conversation-label">
+                        <i data-lucide="earth"></i>
+                        <span>Global Sales</span>
+                    </div>
+                    <span class="conversation-count">23</span>
+                </div>
+            </div>
+            <div class="show-hidden">
+                <span>Show 20 hidden</span>
+                <i data-lucide="chevron-down" class="settings-icon"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
